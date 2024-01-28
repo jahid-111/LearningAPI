@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    .post{
+        background-color: gray;
+        border: 3px;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 8px;
+        width: 70%;
+    }
+
+</style>
+
 <body>
-    <h2>Data Loader</h2>
-    <button onclick="dataLoad()" title="Click & Check Console ">Click me</button>
+    <h2 style="background-color: bisque; font-size: 3em; text-align: center;">Data Load From Server <span title="Application Programming Interface">(API)</span></h2>
+    <button onclick="getData()" title="Click & Check Console ">Check All Data</button>
 
-    <button  onclick="dataLoad()">Check All Data</button>
-    
-    <div id="data-section">
-        <ul id="userList">
-
-        </ul>
-
-
-    </div>
+    <button onclick="dataLoad()" title="Click & Check Console ">User List</button>
 
 
 
+    <section class="dataBox" style="display:flex; flex-direction: column;">
 
-   
+        <div style="background-color: yellowgreen;  width: 30%;">
+            <div id="data-section">
+                <ul id="userList">
+                </ul>
+            </div>
+        </div>
+
+        <!-- another data here from JSON.js -->
+
+    </section>
+      
     <script src="json.js"></script>
 </body>
 </html>
